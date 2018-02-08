@@ -8,9 +8,26 @@
   <body>
       <form>
 				<label for="affichage"> Entrez un nombre en 0 et 10 : </label>
-				<input type="number" id="selectorField" min=0 max=10 />
+				<input type="number" id="selectorField" min=0 max=10 value=0/>
 				<input type="button" id="bouton" onclick="start()" value="Afficher"/>
-			</form>
+        <input type="button" id="end" onclick="stop()" value="Stop" />
+      </form>
+
+      <form>
+        <label for="scoreVictoire"> Victoire : </label>
+        <input type="number" id="scoreVictoire" value=0 />
+      </form>
+
+      <form>
+        <label for="scoreDefaite"> Defaite : </label>
+        <input type="number" id="scoreDefaite" value=0 />
+      </form>
+
+      <form>
+        <label for="scoreEgalite"> Match Nul : </label>
+        <input type="number" id="scoreEgalite" value=0 />
+      </form>
+
 			<div id="result">
         <p id="paragraphe"></p>
       </div>
@@ -19,12 +36,6 @@
         <p id="AnnonceDeVictoire"></p>
       </div>
 
-      <div id="compteur">
-        <p id="compteurVictoire"></p>
-        <p id="compteurDefaite"></p>
-        <p id="compteurMatchNul"></p>
-      </div>
-      
     <script type="text/javascript" src="js/black_jack.js"></script>
   </body>
 
